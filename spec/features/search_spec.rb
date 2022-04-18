@@ -11,10 +11,10 @@ RSpec.describe 'search for nearest charging station', type: :feature do
 
     expect(page).to have_content("Here's Your Nearest Charging Station")
     expect(page).to have_content("Name:")
-    expect(page).to have_content("miles away")
-    expect(page).to have_content("Travel Time:")
+    expect(page).to have_content("miles away") #
+    expect(page).to have_content("Travel Time:") #
     expect(page).to have_content("Address:")
-    expect(page).to have_content("Directions:")
+    expect(page).to have_content("Directions:") #
     expect(page).to have_content("Fuel Type:")
     expect(page).to have_content("Access Times:")
   end
