@@ -10,12 +10,12 @@ RSpec.describe 'search for nearest charging station', type: :feature do
     expect(current_path).to eq(search_path)
 
     expect(page).to have_content("Here's Your Nearest Charging Station")
-    expect(page).to have_content("Name:")
-    expect(page).to have_content("miles away") #
-    expect(page).to have_content("Travel Time:") #
-    expect(page).to have_content("Address:")
-    expect(page).to have_content("Directions:") #
-    expect(page).to have_content("Fuel Type:")
-    expect(page).to have_content("Access Times:")
+    expect(page).to have_content("Name: CBRE As Agent for EQC Operating Trust")
+    expect(page).to have_content("0.1 miles away") #
+    expect(page).to have_content("Travel Time: 1 minutes") #
+    expect(page).to have_content("Address: 1225 17th Street, Suite 130, Denver, CO")
+    expect(page).to have_content("Directions: Start out going southeast on 17th St toward Larimer St/CO-33. 1225 17TH ST, SUITE 130 is on the right.") #
+    expect(page).to have_content("Fuel Type: ELEC")
+    expect(page).to have_content("Access Times: MO: Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR: Not Specified; SA: Not Specified; SU: Not Specified")
   end
 end

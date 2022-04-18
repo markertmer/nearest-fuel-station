@@ -1,11 +1,11 @@
 <h1>Here's Your Nearest Charging Station</h1>
 
-<h2>Name: </h2>
+<h2>Name: <%= @station.name %></h2>
 <ul>
-  <li> miles away</li>
-  <li>Travel Time: </li>
-  <li>Address: </li>
-  <li>Directions: </li>
-  <li>Fuel Type: </li>
-  <li>Access Times: </li>
+  <li><%= @station.distance %> miles away</li>
+  <li>Travel Time: <%= @station.travel_time %> minutes</li>
+  <li>Address: <%= @station.address %></li>
+  <li>Directions: <%= @station.directions %></li>
+  <li>Fuel Type: <%= @station.fuel_type %></li>
+  <li>Access Times: <%= @station.access_times %></li>
 </ul>
